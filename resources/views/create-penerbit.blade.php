@@ -1,0 +1,20 @@
+@extends('./layout')
+@section('container')
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+<form method="POST" action="/storepenerbit">
+    @csrf
+    <div class="mb-3">
+      <label for="examplepenerbit" class="form-label">Penerbit</label>
+      <input class="form-control form-control-lg" type="text" class="form-control" id="examplepenerbit" name="penerbit" >
+    </div>
+    <button type="submit" class="d-grid gap-2 col-1 btn btn-success text-light">Submit</button>
+  </form>
+    </div>
+  </div>
+</div>
+@endsection
